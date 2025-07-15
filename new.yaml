@@ -1,0 +1,19 @@
+stages:
+  - lint
+  - test
+  - report
+
+lint_job:
+  stage: lint
+  script:
+    - npm run lint
+
+ui_tests:
+  stage: test
+  script:
+    - npm run test:e2e
+
+generate_report:
+  stage: report
+  script:
+    - npm run allure:report
