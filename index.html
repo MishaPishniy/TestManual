@@ -3,12 +3,29 @@
     <head> 
         <title> Моя перша сторінка </title>
         <link rel="stylesheet" href="card.css">
+    <style>
+      h1 {
+         color: brown;
+         font-size: 32px;
+      }
+      p {
+          color: brown;
+         font-size: 32px;
+      }
+    </style>
+   <script src="hello.js"></script>
     </head>
-
+ 
     <body>
+      <button onclick="alert('Клік')"> Натисни мене </button>
         <h1> Заголовок Н1</h1>
+        <h1> Заголовок Н1</h1>
+
+        <h2> Тег Н2 </h2>
+
+
         <h6> Заголовок Н6</h6>
-        <p> Мій текст Мій текст Мій текст Мій текст Мій текст Мій текст  Перехід на 2 строчку 
+        <p style="color: blue;"> Мій текст Мій текст Мій текст Мій текст Мій текст Мій текст  Перехід на 2 строчку 
            <br> Друга строчка  <a href = "https://www.google.com/"> <br> Хочу перейти на Гугл </a>
             <br> Мій текст Мій текст Мій текст Мій текст Мій текст 
             <br> Мій текст Мій текст Мій текст Мій текст 
@@ -16,6 +33,7 @@
             <br> Мій текст Мій текст Мій текст Мій текст 
             <br> Мій текст Мій текст Мій текст Мій текст 
         </p>
+        <p> Без коліру</p>
        <a href="https://www.google.com/"> <button> Натиснути та перейти кудись</button></a>
     <input> </input> 
     <img src="photo/4.jpg" width="300" height="300" alt="Нова картинка">
@@ -42,11 +60,19 @@
     </li>
 </ol>
 
+<h2> Тег Н2 </h2>
 <div class="card">
 <H2> КОНТАКТИ</H2>
 <p> +38097</p>
 <p> адреса </p>
 </div>
+
+<button id="myBtn"> Натисни і мене </button>
+<script>
+   document.getElementById("myBtn").onclick=function (){
+      alert("Ми натискли кнопку!")
+   };
+</script>
     </body>
 
 </html>
